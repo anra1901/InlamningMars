@@ -1,0 +1,45 @@
+@import "./mixins/mixins";
+@import "./variables/variables";
+@import "./hero1";
+
+/* Hur fixa blåa-bildlagret? */
+.header-faq {
+  @include header-hero;
+  background-image: linear-gradient(
+      182deg,
+      #00132c 61%,
+      rgba(21, 52, 98, 0) -13%
+    ),
+    linear-gradient(to bottom, #c1555593, #240202a2), url(/images/hero2.jpg);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__wraper {
+    grid-area: 1 / 2;
+
+    @media (min-width: 500px) {
+      margin-top: 123px;
+      margin-left: 150px;
+    }
+
+    &__text {
+      font-size: 26px;
+      font-weight: bold;
+      color: #436dac;
+      transition: linear 300ms;
+
+      @media (min-width: 700px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 600px) {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+.hero2-line {
+  @extend .hero1-line;
+  max-width: 390px;
+}

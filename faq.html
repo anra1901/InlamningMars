@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <title>Mars One</title>
   </head>
 
   <body>
-    <nav class="menu">
-      <div class="menu__wraper">
-        <div class="menu__logo-wrap">
-          <img
-            class="menu__logo-wrap__logo"
-            src="/images/"
-            alt="Logo Mars One"
-          />
-        </div>
-        <ul class="menu__link-list">
-          <li><a class="menu__links" href="index.html">Mars One</a></li>
-          <li><a class="menu__links--active" href="faq.html">FAQ</a></li>
-          <li><a class="menu__links" href="join.html">Join The Crew</a></li>
-        </ul>
+    <div class="menu-wraper">
+      <div class="menu-wraper__logo-wrap">
+        <img src="/images/logo.png" alt="Logo Mars One" />
       </div>
-    </nav>
+      <nav>
+        <ul class="menu-wraper__link-list">
+          <li><a class="menu-wraper__links" href="index.html">Mars One</a></li>
+          <li><a class="menu-wraper__links--active" href="faq.html">FAQ</a></li>
+          <li>
+            <a class="menu-wraper__links" href="join.html">Join The Crew</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <header class="header">
-      <div class="header__wraper">
-        <h1 class="header__wraper__heading-one">
+    <header class="header-faq">
+      <div class="header-faq__wraper">
+        <h1 class="header-faq__wraper__heading-one">
           Our next home
         </h1>
-        <p class="header__wraper__text">
+        <span class="hero2-line"></span>
+        <p class="header-faq__wraper__text">
           Be part of the first <br />
           settlement on Mars
         </p>
@@ -105,7 +108,7 @@
           </div>
           <div class="astronaut-img">
             <img
-              src="/images/"
+              src="/images/astronaut.jpg"
               alt="Astronaut standing between high rock mountains"
             />
           </div>
@@ -131,7 +134,18 @@
           </p>
         </div>
         <div class="planets-img">
-          <img src="/images/" alt="Solar system" />
+          <img
+            src="/images/planetMars.png"
+            alt="Ilustration of mars in the solar system"
+          />
+          <img
+            src="/images/sun.png"
+            alt="Ilustration of the sun in the solar system"
+          />
+          <img
+            src="/images/planetEarth.png"
+            alt="Ilustration of the earth in the solar system"
+          />
         </div>
       </section>
     </main>

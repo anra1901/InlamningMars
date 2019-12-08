@@ -1,0 +1,44 @@
+@import "./mixins/mixins";
+
+.header-join {
+  @include header-hero;
+
+  background-image: linear-gradient(
+      183deg,
+      #00132c 60%,
+      rgba(21, 52, 98, 0) -11%
+    ),
+    linear-gradient(to bottom, #24020294 1%, #c15555d0), url(/images/hero3.jpg);
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+  &__wraper {
+    grid-area: 2 / 1;
+
+    @media (min-width: 500px) {
+      margin-left: 137px;
+      margin-bottom: 68px;
+      align-self: end;
+    }
+
+    &__text {
+      font-size: 26px;
+      font-weight: bold;
+      color: #436dac;
+      transition: linear 300ms;
+
+      @media (min-width: 700px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 600px) {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+.hero3-line {
+  @extend .hero1-line;
+  max-width: 350px;
+}
