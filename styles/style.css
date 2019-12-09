@@ -1,28 +1,49 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
 /* Hur fixa blåa-bildlagret ovalt? */
 .header {
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
   background-image: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0) -13%), linear-gradient(to bottom, #c1555593, #240202a2), url(/images/hero1.jpg);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+@media (min-width: 700px) {
+  .header {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+}
+
+@media (min-width: 500px) {
+  .header {
+    place-items: unset;
+  }
 }
 
 .header__wraper {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: 1 / 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 15%;
 }
 
 @media (min-width: 500px) {
   .header__wraper {
-    margin-top: 123px;
-    margin-left: 150px;
+    margin-top: 1vh;
+    margin-left: 60vw;
   }
 }
 
@@ -40,7 +61,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .header__wraper__text {
     font-size: 35px;
   }
@@ -56,28 +77,48 @@
 
 /* Hur fixa blåa-bildlagret ovalt? */
 .header {
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
   background-image: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0) -13%), linear-gradient(to bottom, #c1555593, #240202a2), url(/images/hero1.jpg);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+@media (min-width: 700px) {
+  .header {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+}
+
+@media (min-width: 500px) {
+  .header {
+    place-items: unset;
+  }
 }
 
 .header__wraper {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: 1 / 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 15%;
 }
 
 @media (min-width: 500px) {
   .header__wraper {
-    margin-top: 123px;
-    margin-left: 150px;
+    margin-top: 1vh;
+    margin-left: 60vw;
   }
 }
 
@@ -95,7 +136,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .header__wraper__text {
     font-size: 35px;
   }
@@ -111,28 +152,48 @@
 
 /* Hur fixa blåa-bildlagret? */
 .header-faq {
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
   background-image: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0) -13%), linear-gradient(to bottom, #c1555593, #240202a2), url(/images/hero2.jpg);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+@media (min-width: 700px) {
+  .header-faq {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header-faq {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+}
+
+@media (min-width: 500px) {
+  .header-faq {
+    place-items: unset;
+  }
 }
 
 .header-faq__wraper {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: 1 / 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 15%;
 }
 
 @media (min-width: 500px) {
   .header-faq__wraper {
-    margin-top: 123px;
-    margin-left: 150px;
+    margin-top: 1vh;
+    margin-left: 60vw;
   }
 }
 
@@ -150,7 +211,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .header-faq__wraper__text {
     font-size: 35px;
   }
@@ -161,29 +222,51 @@
 }
 
 .header-join {
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
   background-image: linear-gradient(183deg, #00132c 60%, rgba(21, 52, 98, 0) -11%), linear-gradient(to bottom, #24020294 1%, #c15555d0), url(/images/hero3.jpg);
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[2];
-  -ms-grid-columns: (1fr)[2];
-      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  place-items: center;
+  transition: linear 300ms;
+}
+
+@media (min-width: 700px) {
+  .header-join {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header-join {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header-join {
+    place-items: unset;
+  }
 }
 
 .header-join__wraper {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: 2 / 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 15%;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1100px) {
   .header-join__wraper {
-    margin-left: 137px;
-    margin-bottom: 68px;
+    margin-left: 7vw;
+    margin-bottom: 13vh;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
@@ -204,7 +287,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .header-join__wraper__text {
     font-size: 35px;
   }
@@ -214,10 +297,220 @@
   max-width: 350px;
 }
 
+.join-us {
+  text-align: center;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 500px) {
+  .join-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.join-us__text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 20px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 500px) {
+  .join-us__text-wrap {
+    padding-top: 113px;
+  }
+}
+
+.join-us__text-wrap__heading {
+  color: #e32700;
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 500px) {
+  .join-us__text-wrap__heading {
+    font-size: 36px;
+    padding-bottom: 33px;
+  }
+}
+
+.join-us__text-wrap__text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2c4f80;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 500px) {
+  .join-us__text-wrap__text {
+    font-size: 24px;
+    max-width: 509px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.form {
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2c4f80;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+          box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 1100px) {
+  .form {
+    text-align: left;
+    max-width: 1180px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 56px (auto)[3] 56px;
+        grid-template-columns: 56px repeat(3, auto) 56px;
+    -ms-grid-rows: 56px (auto)[4] 33px;
+        grid-template-rows: 56px repeat(4, auto) 33px;
+  }
+}
+
+.form__firstname {
+  padding-top: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: 2 / 2;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 1100px) {
+  .form__firstname {
+    padding-top: 0;
+  }
+}
+
+.form__lastname {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: 2 / 3;
+}
+
+.form__dateofbirth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: 2 / 4;
+}
+
+.form__professional {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: 3 / 2;
+}
+
+.form__primeskill {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: 3 / 3;
+}
+
+.form__motivation {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / span 3;
+}
+
+.form__submit-btn {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: 5 / 3;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c4f80;
+  width: 128px;
+  height: 38px;
+  border-radius: 10px;
+  border: solid 1px #2c4f80;
+}
+
+@media (min-width: 1100px) {
+  .form__submit-btn {
+    margin-left: 40px;
+  }
+}
+
+input, .motivation {
+  width: 320px;
+  height: 39px;
+  border-radius: 5px;
+  border: solid 1px #2c4f80;
+  margin-bottom: 25px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 1100px) {
+  input, .motivation {
+    width: 370px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+}
+
+#dateofbirth {
+  width: 207px;
+  height: 39px;
+}
+
+.motivation {
+  min-width: 80vw;
+  min-height: 20vh;
+  margin-left: 15px;
+  margin-right: 15px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 1100px) {
+  .motivation {
+    min-width: 1063px;
+    min-height: 271px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
+  background: #f1f1f1;
 }
 
 main {
@@ -236,7 +529,9 @@ main {
           flex-direction: column;
   place-content: center center;
   place-items: center center;
-  /* Logo-bilden syns inte, varför? */
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  /* Varför den placeringen?*/
   /* Listan är i två rader */
 }
 
@@ -266,22 +561,27 @@ main {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 72px;
+  max-height: 43px;
   position: absolute;
 }
 
 .menu-wraper__link-list {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[3];
+      grid-template-columns: repeat(3, -webkit-max-content);
+      grid-template-columns: repeat(3, max-content);
+  place-items: center;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 500px) {
+  .menu-wraper__link-list {
+    padding-right: 20px;
+  }
 }
 
 .menu-wraper__links {
@@ -289,13 +589,15 @@ main {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 15px;
+  padding: 15px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
   .menu-wraper__links {
     font-size: 16px;
-    padding: 25px;
+    padding: 30px;
   }
 }
 
@@ -304,17 +606,19 @@ main {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 15px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   -webkit-text-decoration-color: #e32700;
           text-decoration-color: #e32700;
+  padding: 15px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
   .menu-wraper__links--active {
     font-size: 16px;
-    padding: 25px;
+    padding: 30px;
   }
 }
 
@@ -332,7 +636,7 @@ h1 {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   h1 {
     font-size: 50px;
   }

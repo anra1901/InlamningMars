@@ -1,0 +1,147 @@
+.join-us {
+  text-align: center;
+  transition: linear 300ms;
+
+  @media (min-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px;
+    transition: linear 300ms;
+
+    @media (min-width: 500px) {
+      padding-top: 113px;
+    }
+
+    &__heading {
+      color: $orange-font;
+      font-size: 30px;
+      font-weight: 800;
+      padding-bottom: 20px;
+      transition: linear 300ms;
+
+      @media (min-width: 500px) {
+        font-size: 36px;
+        padding-bottom: 33px;
+      }
+    }
+
+    &__text {
+      font-size: 20px;
+      font-weight: 500;
+      color: $blue-font;
+      transition: linear 300ms;
+
+      @media (min-width: 500px) {
+        font-size: 24px;
+        max-width: 509px;
+        align-self: center;
+      }
+    }
+  }
+}
+
+.form {
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  color: $blue-font;
+  box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+  transition: linear 300ms;
+
+  @media (min-width: 1100px) {
+    text-align: left;
+    max-width: 1180px;
+    display: grid;
+    grid-template-columns: 56px repeat(3, auto) 56px;
+    grid-template-rows: 56px repeat(4, auto) 33px;
+  }
+
+  &__firstname {
+    padding-top: 20px;
+    grid-area: 2 / 2;
+    transition: linear 300ms;
+
+    @media (min-width: 1100px) {
+      padding-top: 0;
+    }
+  }
+
+  &__lastname {
+    grid-area: 2 / 3;
+  }
+
+  &__dateofbirth {
+    grid-area: 2 / 4;
+  }
+
+  &__professional {
+    grid-area: 3 / 2;
+  }
+
+  &__primeskill {
+    grid-area: 3 / 3;
+  }
+
+  &__motivation {
+    grid-row: 4;
+    grid-column: 2 / span 3;
+  }
+
+  &__submit-btn {
+    grid-area: 5 / 3;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    color: $blue-font;
+    width: 128px;
+    height: 38px;
+    border-radius: 10px;
+    border: solid 1px $blue-font;
+
+    @media (min-width: 1100px) {
+      margin-left: 40px;
+    }
+  }
+}
+
+input {
+  width: 320px;
+  height: 39px;
+  border-radius: 5px;
+  border: solid 1px #2c4f80;
+  margin-bottom: 25px;
+  transition: linear 300ms;
+
+  @media (min-width: 1100px) {
+    width: 370px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+}
+
+#dateofbirth {
+  width: 207px;
+  height: 39px;
+}
+
+.motivation {
+  @extend input;
+  min-width: 80vw;
+  min-height: 20vh;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: linear 300ms;
+
+  @media (min-width: 1100px) {
+    min-width: 1063px;
+    min-height: 271px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

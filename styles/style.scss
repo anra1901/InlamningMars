@@ -1,13 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
 @import "./mixins/mixins";
 @import "./variables/variables";
 @import "./hero1";
 @import "./hero2";
 @import "./hero3";
+@import "./form";
 
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
+  background: #f1f1f1;
 }
 
 main {
@@ -17,34 +23,44 @@ main {
 .menu-wraper {
   @include menu-wraper;
 
-  /* Logo-bilden syns inte, varför? */
+  /* Varför den placeringen?*/
   &__logo-wrap {
     @include image-sizing;
   }
 
   &__link-list {
     list-style-type: none;
-    display: flex;
-    flex-flow: row;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    place-items: center;
+    transition: linear 300ms;
+
+    @media (min-width: 500px) {
+      padding-right: 20px;
+    }
   }
 
   /* Listan är i två rader */
   &__links {
     @include menu-link-style;
+    padding: 15px;
+    transition: linear 300ms;
 
-    @media (min-width: 700px) {
+    @media (min-width: 500px) {
       font-size: 16px;
-      padding: 25px;
+      padding: 30px;
     }
 
     &--active {
       @include menu-link-style;
       text-decoration-line: underline;
       text-decoration-color: $orange-font;
+      padding: 15px;
+      transition: linear 300ms;
 
-      @media (min-width: 700px) {
+      @media (min-width: 500px) {
         font-size: 16px;
-        padding: 25px;
+        padding: 30px;
       }
     }
   }
@@ -60,7 +76,7 @@ h1 {
     font-size: 60px;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 500px) {
     font-size: 50px;
   }
 }
