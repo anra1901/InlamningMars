@@ -141,6 +141,7 @@
 .topsection__wraper__text {
   color: #323232;
   font-size: 15px;
+  line-height: 26px;
 }
 
 @media (min-width: 500px) {
@@ -182,6 +183,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*&__wrap-move-text {
+   
+  }*/
 }
 
 @media (min-width: 500px) {
@@ -265,12 +269,6 @@
   }
 }
 
-.about-mars__wrap-move-text {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .about-mars__sun {
   -webkit-box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
           box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
@@ -300,6 +298,8 @@
   font-weight: 500;
   color: #e32700;
   text-align: left;
+  line-height: 22px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: 500px) {
@@ -314,6 +314,7 @@
   color: #323232;
   max-width: 417px;
   text-align: left;
+  line-height: 22px;
 }
 
 .mars-img {
@@ -609,8 +610,8 @@
   padding-bottom: 20px;
   color: #2c4f80;
   text-align: center;
-  margin-top: 76px;
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 500px) {
@@ -619,8 +620,20 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1300px) {
+  .faq__heading {
+    margin-top: 76px;
+    margin-bottom: 60px;
+  }
+}
+
+.faq__wraper {
+  margin: 15px;
+}
+
+@media (min-width: 1300px) {
   .faq__wraper {
+    margin: 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 2fr;
@@ -631,7 +644,11 @@
   }
 }
 
-@media (min-width: 500px) {
+.faq__why {
+  padding: 20px;
+}
+
+@media (min-width: 1300px) {
   .faq__why {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
@@ -642,11 +659,21 @@
   }
 }
 
-.faq__why__text {
-  padding-bottom: 20px;
+.faq__why__heading {
+  line-height: 31px;
 }
 
-@media (min-width: 500px) {
+.faq__why__text {
+  padding-bottom: 20px;
+  line-height: 22px;
+}
+
+.faq__risky {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1300px) {
   .faq__risky {
     -ms-grid-row: 1;
     grid-row: 1;
@@ -672,7 +699,7 @@
   padding-left: 20px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1300px) {
   .faq__to-do {
     -ms-grid-row: 2;
     grid-row: 2;
@@ -687,7 +714,11 @@
   }
 }
 
-@media (min-width: 500px) {
+.faq__to-do__text-wraper {
+  margin: 20px;
+}
+
+@media (min-width: 1300px) {
   .faq__to-do__text-wraper {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -697,6 +728,56 @@
         align-self: center;
     margin-left: 76px;
   }
+}
+
+.faq__to-do__heading {
+  margin-top: 20px;
+}
+
+.faq__to-do__text {
+  line-height: 22px;
+}
+
+.faq__travel {
+  margin-top: 40px;
+}
+
+@media (min-width: 1300px) {
+  .faq__travel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 81px;
+  }
+}
+
+.faq__travel__text-wraper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1300px) {
+  .faq__travel__text-wraper {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / span 2;
+    padding: 75px 97px 79px 0;
+    place-self: center;
+  }
+}
+
+.faq__travel__heading {
+  margin-bottom: 60px;
+}
+
+.faq__travel__text {
+  line-height: 25px;
+  padding-bottom: 20px;
 }
 
 .faq__why,
@@ -710,25 +791,27 @@
 
 .faq__why__heading,
 .faq__risky__heading,
-.faq__to-do__heading {
+.faq__to-do__heading,
+.faq__travel__heading {
   font-size: 20px;
   font-weight: 500;
   color: #e32700;
-  max-width: 352px;
   margin-bottom: 20px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1300px) {
   .faq__why__heading,
   .faq__risky__heading,
-  .faq__to-do__heading {
+  .faq__to-do__heading,
+  .faq__travel__heading {
     font-size: 24px;
   }
 }
 
 .faq__why__text,
 .faq__risky__text,
-.faq__to-do__text {
+.faq__to-do__text,
+.faq__travel__text {
   font-size: 16px;
   font-weight: 500;
   color: #323232;
@@ -750,7 +833,7 @@
   max-height: 100%;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1300px) {
   .astronaut-img {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
@@ -762,8 +845,12 @@
 
 .planets-wraper {
   background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
-  max-width: 462px;
-  max-height: 462px;
+  min-width: 462px;
+  min-height: 462px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 .planets-wraper__mars {

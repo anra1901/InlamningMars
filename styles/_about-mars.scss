@@ -46,9 +46,9 @@
     }
   }
 
-  &__wrap-move-text {
-    align-self: center;
-  }
+  /*&__wrap-move-text {
+   
+  }*/
 
   &__sun {
     @include article-wrap;
@@ -71,6 +71,8 @@
     @include heading-three;
     color: $orange-font;
     text-align: left;
+    line-height: 22px;
+    margin-bottom: 22px;
 
     @media (min-width: 500px) {
       font-size: 24px;
@@ -83,6 +85,7 @@
     @include text-characters;
     max-width: 417px;
     text-align: left;
+    line-height: 22px;
   }
 }
 
