@@ -75,6 +75,312 @@
   margin: 5px;
 }
 
+.topsection {
+  background: #ffffff;
+  margin: 0;
+}
+
+.topsection__wraper {
+  min-height: 559px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center center;
+  gap: 2em;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 1000px) {
+  .topsection__wraper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.topsection__wraper__text-wrap {
+  padding: 43px 20px 10px 20px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 1200px) {
+  .topsection__wraper__text-wrap {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: 1 / 2;
+    padding: 118px 117px;
+  }
+}
+
+.topsection__wraper__heading {
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  color: #e32700;
+}
+
+@media (min-width: 500px) {
+  .topsection__wraper__heading {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 500px) {
+  .topsection__wraper__heading {
+    padding-bottom: 29px;
+  }
+}
+
+.topsection__wraper__text {
+  color: #323232;
+  font-size: 15px;
+}
+
+@media (min-width: 500px) {
+  .topsection__wraper__text {
+    font-size: 18px;
+  }
+}
+
+.mars-sky-img {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.mars-sky-img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 500px) {
+  .mars-sky-img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: 1 / 1;
+  }
+}
+
+.about-mars {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 500px) {
+  .about-mars {
+    display: -ms-grid;
+    display: grid;
+    gap: 35px;
+    -ms-grid-rows: 110px (auto)[3] 110px;
+        grid-template-rows: 110px repeat(3, auto) 110px;
+    -ms-grid-columns: 96px (auto)[3] 96px;
+        grid-template-columns: 96px repeat(3, auto) 96px;
+  }
+}
+
+.about-mars__heading {
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  color: #2c4f80;
+}
+
+@media (min-width: 500px) {
+  .about-mars__heading {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 500px) {
+  .about-mars__heading {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2 / span 3;
+  }
+}
+
+.about-mars__why-mars {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+  background: #ffffff;
+}
+
+@media (min-width: 500px) {
+  .about-mars__why-mars {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / span 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-mars__wrap-why-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about-mars__move-in {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+  background: #ffffff;
+}
+
+@media (min-width: 500px) {
+  .about-mars__move-in {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / span 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-mars__wrap-move-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about-mars__sun {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+  background: #ffffff;
+}
+
+@media (min-width: 500px) {
+  .about-mars__sun {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3 / span 2;
+    -ms-grid-column: 4;
+    grid-column: 4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.about-mars__wrap-sun-text {
+  place-self: center;
+}
+
+.about-mars__why-mars-heading, .about-mars__move-in-heading, .about-mars__sun-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e32700;
+  text-align: left;
+}
+
+@media (min-width: 500px) {
+  .about-mars__why-mars-heading, .about-mars__move-in-heading, .about-mars__sun-heading {
+    font-size: 24px;
+  }
+}
+
+.about-mars__why-mars-text, .about-mars__move-in-text, .about-mars__sun-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #323232;
+  max-width: 417px;
+  text-align: left;
+}
+
+.mars-img {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  max-width: 158px;
+  max-height: 158px;
+}
+
+.mars-img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.station-img {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  max-width: 340px;
+  max-height: 340px;
+}
+
+.station-img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sun-img {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  min-width: 232px;
+  min-height: 232px;
+}
+
+.sun-img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.read-more-btn {
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c4f80;
+  width: 128px;
+  height: 38px;
+  border-radius: 10px;
+  border: solid 1px #2c4f80;
+}
+
 /* Hur fixa blåa-bildlagret ovalt? */
 .header {
   min-height: 500px;
@@ -297,6 +603,204 @@
   max-width: 350px;
 }
 
+.faq__heading {
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  color: #2c4f80;
+  text-align: center;
+  margin-top: 76px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 500px) {
+  .faq__heading {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 500px) {
+  .faq__wraper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    gap: 39px;
+  }
+}
+
+@media (min-width: 500px) {
+  .faq__why {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    padding: 66px 60px 127px 60px;
+  }
+}
+
+.faq__why__text {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+  .faq__risky {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    padding: 66px 148px 55px 69px;
+  }
+}
+
+.faq__risky__text {
+  line-height: 23px;
+  padding-bottom: 20px;
+}
+
+.faq__risky__text-list {
+  line-height: 28px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+.faq__risky__text-list li {
+  padding-left: 20px;
+}
+
+@media (min-width: 500px) {
+  .faq__to-do {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+.faq__why,
+.faq__risky,
+.faq__to-do,
+.faq__travel {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(145, 145, 145, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(145, 145, 145, 0.5);
+}
+
+.faq__why__heading,
+.faq__risky__heading,
+.faq__to-do__heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e32700;
+  max-width: 352px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+  .faq__why__heading,
+  .faq__risky__heading,
+  .faq__to-do__heading {
+    font-size: 24px;
+  }
+}
+
+.faq__why__text,
+.faq__risky__text,
+.faq__to-do__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.astronaut-img {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.astronaut-img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 500px) {
+  .astronaut-img {
+    max-height: 462px;
+    max-width: 462px;
+    min-height: 315px;
+    min-width: 315px;
+  }
+}
+
+.planets-wraper {
+  background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+  max-width: 462px;
+  max-height: 462px;
+}
+
+.planets-wraper__mars {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.planets-wraper__mars img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.planets-wraper__sun {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  max-height: 48px;
+  max-width: 48px;
+}
+
+.planets-wraper__sun img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.planets-wraper__earth {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.planets-wraper__earth img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .join-us {
   text-align: center;
   -webkit-transition: linear 300ms;
@@ -338,10 +842,10 @@
 }
 
 .join-us__text-wrap__heading {
-  color: #e32700;
   font-size: 30px;
   font-weight: 800;
   padding-bottom: 20px;
+  color: #e32700;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
 }
@@ -349,6 +853,11 @@
 @media (min-width: 500px) {
   .join-us__text-wrap__heading {
     font-size: 36px;
+  }
+}
+
+@media (min-width: 500px) {
+  .join-us__text-wrap__heading {
     padding-bottom: 33px;
   }
 }
@@ -376,13 +885,14 @@
   font-size: 14px;
   font-weight: bold;
   color: #2c4f80;
+  margin-bottom: 60px;
   -webkit-box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
           box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1180px) {
   .form {
     text-align: left;
     max-width: 1180px;
@@ -392,6 +902,7 @@
         grid-template-columns: 56px repeat(3, auto) 56px;
     -ms-grid-rows: 56px (auto)[4] 33px;
         grid-template-rows: 56px repeat(4, auto) 33px;
+    margin-bottom: 78px;
   }
 }
 
@@ -404,7 +915,7 @@
   transition: linear 300ms;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1180px) {
   .form__firstname {
     padding-top: 0;
   }
@@ -443,9 +954,6 @@
 }
 
 .form__submit-btn {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-  grid-area: 5 / 3;
   background: #ffffff;
   font-size: 14px;
   font-weight: 500;
@@ -454,47 +962,53 @@
   height: 38px;
   border-radius: 10px;
   border: solid 1px #2c4f80;
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: 5 / 3;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1180px) {
   .form__submit-btn {
     margin-left: 40px;
   }
 }
 
-input, .motivation {
-  width: 320px;
-  height: 39px;
+input, .dateofbirth, .motivation {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 310px;
+  height: 35px;
   border-radius: 5px;
   border: solid 1px #2c4f80;
+  padding: 10px 15px;
   margin-bottom: 25px;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
 }
 
-@media (min-width: 1100px) {
-  input, .motivation {
+@media (min-width: 1180px) {
+  input, .dateofbirth, .motivation {
     width: 370px;
+    height: 39px;
     margin-top: 15px;
     margin-bottom: 45px;
   }
 }
 
-#dateofbirth {
+.dateofbirth {
   width: 207px;
-  height: 39px;
 }
 
 .motivation {
   min-width: 80vw;
   min-height: 20vh;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1180px) {
   .motivation {
     min-width: 1063px;
     min-height: 271px;
@@ -531,6 +1045,8 @@ main {
   place-items: center center;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /* Varför den placeringen?*/
   /* Listan är i två rader */
 }
@@ -552,18 +1068,29 @@ main {
 }
 
 .menu-wraper__logo-wrap {
-  position: relative;
+  min-height: 100%;
   height: 100%;
   width: 100%;
+  max-width: 72px;
+  max-height: 43px;
+  margin-right: 0;
+  margin-bottom: 15px;
 }
 
 .menu-wraper__logo-wrap img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 72px;
-  max-height: 43px;
-  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 500px) {
+  .menu-wraper__logo-wrap {
+    margin: 0 auto 0 42px;
+  }
 }
 
 .menu-wraper__link-list {
@@ -606,11 +1133,9 @@ main {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: #e32700;
-          text-decoration-color: #e32700;
-  padding: 15px;
+  border-bottom: 3px solid #e32700;
+  margin: 15px;
+  padding-bottom: 7px;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
 }
@@ -618,7 +1143,7 @@ main {
 @media (min-width: 500px) {
   .menu-wraper__links--active {
     font-size: 16px;
-    padding: 30px;
+    margin: 30px;
   }
 }
 
@@ -640,5 +1165,60 @@ h1 {
   h1 {
     font-size: 50px;
   }
+}
+
+.footer {
+  background: #2c4f80;
+  color: #ffffff;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    min-height: 317px;
+  }
+}
+
+.footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+  .footer h4 {
+    font-size: 30px;
+    margin-bottom: 26px;
+  }
+}
+
+.footer__text {
+  font-size: 10px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+@media (min-width: 900px) {
+  .footer__text {
+    font-size: 12px;
+  }
+}
+
+strong {
+  color: #f97c7c;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

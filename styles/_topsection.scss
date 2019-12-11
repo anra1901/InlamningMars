@@ -1,0 +1,54 @@
+.topsection {
+  background: $white-font;
+  margin: 0;
+
+  &__wraper {
+    min-height: 559px;
+    display: flex;
+    flex-direction: column;
+    place-items: center center;
+    gap: 2em;
+    transition: linear 300ms;
+
+    @media (min-width: 1000px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__text-wrap {
+      padding: 43px 20px 10px 20px;
+      transition: linear 300ms;
+
+      @media (min-width: 1200px) {
+        grid-area: 1 / 2;
+        padding: 118px 117px;
+      }
+    }
+
+    &__heading {
+      @include heading-two;
+      color: $orange-font;
+
+      @media (min-width: 500px) {
+        padding-bottom: 29px;
+      }
+    }
+
+    &__text {
+      color: $dark-font;
+      font-size: 15px;
+
+      @media (min-width: 500px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.mars-sky-img {
+  @include image-sizing;
+
+  @media (min-width: 500px) {
+    grid-area: 1 / 1;
+  }
+}
