@@ -2,12 +2,15 @@
 @import "./mixins/mixins";
 @import "./variables/variables";
 @import "./hero1";
-@import "./topsection";
+@import "./mars-sky";
 @import "./about-mars";
 @import "./hero2";
 @import "./hero3";
 @import "./faq";
+@import "./solar-system";
+@import "./join-us";
 @import "./form";
+@import "./footer";
 
 * {
   margin: 0;
@@ -27,7 +30,6 @@ main {
   @include menu-wraper;
   flex-wrap: wrap;
 
-  /* Varför den placeringen?*/
   &__logo-wrap {
     @include image-sizing;
     max-width: 72px;
@@ -52,7 +54,6 @@ main {
     }
   }
 
-  /* Listan är i två rader */
   &__links {
     @include menu-link-style;
     padding: 15px;
@@ -91,44 +92,4 @@ h1 {
   @media (min-width: 500px) {
     font-size: 50px;
   }
-}
-
-.footer {
-  background: $blue-font;
-  color: $white-font;
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: 900px) {
-    min-height: 317px;
-  }
-
-  h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-
-    @media (min-width: 900px) {
-      font-size: 30px;
-      margin-bottom: 26px;
-    }
-  }
-
-  &__text {
-    font-size: 10px;
-    text-align: center;
-    margin: 0 10px;
-
-    @media (min-width: 900px) {
-      font-size: 12px;
-    }
-  }
-}
-
-strong {
-  color: #f97c7c;
-  font-weight: bold;
 }

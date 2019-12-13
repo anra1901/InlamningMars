@@ -4,14 +4,33 @@
     url(/images/hero1.jpg);
   display: grid;
   place-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: linear 300ms;
 
   @media (min-width: 500px) {
     place-items: unset;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200vw;
+    height: 200vw;
+    border-radius: 100%;
+    border: 20px solid $blue-font;
+    border-inline-start: 5px;
+    border-inline-end: 5px;
+    background: linear-gradient(182deg, #00132c 61%, rgba(13, 37, 73, 0.9));
+    bottom: 15vw;
+    left: -40vw;
+  }
+
   &__wraper {
     align-self: center;
     margin: 15%;
+    z-index: 10;
+    transition: linear 300ms;
 
     @media (min-width: 500px) {
       margin-top: 1vh;

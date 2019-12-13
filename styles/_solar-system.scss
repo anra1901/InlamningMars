@@ -1,0 +1,25 @@
+.planets-wraper {
+  background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+  max-width: 462px;
+  min-height: 462px;
+  grid-row: 1;
+  grid-column: 1;
+
+  &__mars {
+    @include image-sizing;
+    max-height: 30px;
+    max-width: 30px;
+  }
+
+  &__sun {
+    @include image-sizing;
+    max-height: 48px;
+    max-width: 48px;
+  }
+
+  &__earth {
+    @include image-sizing;
+    max-height: 30px;
+    max-width: 30px;
+  }
+}

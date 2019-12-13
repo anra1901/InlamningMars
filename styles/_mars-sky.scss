@@ -1,4 +1,4 @@
-.topsection {
+.mars-sky {
   background: $white-font;
   margin: 0;
 
@@ -28,6 +28,7 @@
     &__heading {
       @include heading-two;
       color: $orange-font;
+      transition: linear 300ms;
 
       @media (min-width: 500px) {
         padding-bottom: 29px;
@@ -38,6 +39,7 @@
       color: $dark-font;
       font-size: 15px;
       line-height: 26px;
+      transition: linear 300ms;
 
       @media (min-width: 500px) {
         font-size: 18px;
@@ -48,6 +50,7 @@
 
 .mars-sky-img {
   @include image-sizing;
+  transition: linear 300ms;
 
   @media (min-width: 500px) {
     grid-area: 1 / 1;

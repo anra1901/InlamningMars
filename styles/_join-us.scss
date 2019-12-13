@@ -1,0 +1,44 @@
+.join-us {
+  text-align: center;
+  transition: linear 300ms;
+
+  @media (min-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 70px 20px;
+    transition: linear 300ms;
+
+    @media (min-width: 500px) {
+      padding-top: 113px;
+    }
+
+    &__heading {
+      @include heading-two;
+      color: $orange-font;
+      transition: linear 300ms;
+
+      @media (min-width: 500px) {
+        padding-bottom: 33px;
+      }
+    }
+
+    &__text {
+      @include heading-three;
+      color: $blue-font;
+      transition: linear 300ms;
+
+      @media (min-width: 500px) {
+        font-size: 24px;
+        max-width: 509px;
+        align-self: center;
+      }
+    }
+  }
+}
