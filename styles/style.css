@@ -221,6 +221,10 @@
       flex-wrap: wrap;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
+  /* WHY MARS */
+  /* MOVE IN */
+  /* SUN */
+  /* HEADINGS & PARAGRAFS */
 }
 
 @media (min-width: 1000px) {
@@ -472,6 +476,7 @@
   line-height: 22px;
 }
 
+/* IMAGES */
 .mars-img {
   /* min-height: 100%;*/
   height: 100%;
@@ -557,6 +562,7 @@
   }
 }
 
+/* READ MORE BUTTONS */
 .read-more-btn {
   background: #ffffff;
   font-size: 14px;
@@ -863,6 +869,13 @@
   max-width: 350px;
 }
 
+.faq {
+  /* WHY MOVE TO MARS */
+  /* IS IT RISKY */
+  /* TO DO THERE */
+  /* TRAVEL DURATION */
+}
+
 .faq__heading {
   font-size: 30px;
   font-weight: 800;
@@ -956,7 +969,12 @@
 }
 
 .faq__risky__text-list li {
+  color: #e32700;
   padding-left: 20px;
+}
+
+.faq__risky__text-list li p {
+  color: #323232;
 }
 
 @media (min-width: 1000px) {
@@ -1045,6 +1063,7 @@
   padding-bottom: 20px;
 }
 
+/* CHARACTERS, HEADINGS, PARAGRAFS */
 .faq__why,
 .faq__risky,
 .faq__to-do,
@@ -1084,6 +1103,7 @@
   color: #323232;
 }
 
+/* ASTRONAUT IMG */
 .astronaut-img {
   /* min-height: 100%;*/
   height: 100%;

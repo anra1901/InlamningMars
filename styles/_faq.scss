@@ -24,6 +24,8 @@
     }
   }
 
+  /* WHY MOVE TO MARS */
+
   &__why {
     padding: 20px;
 
@@ -42,6 +44,8 @@
       line-height: 22px;
     }
   }
+
+  /* IS IT RISKY */
 
   &__risky {
     padding: 20px;
@@ -65,10 +69,17 @@
       padding-bottom: 20px;
       padding-left: 15px;
       li {
+        color: $orange-font;
         padding-left: 20px;
+
+        p {
+          color: $dark-font;
+        }
       }
     }
   }
+
+  /* TO DO THERE */
 
   &__to-do {
     @media (min-width: 1000px) {
@@ -98,6 +109,8 @@
       line-height: 22px;
     }
   }
+
+  /* TRAVEL DURATION */
 
   &__travel {
     margin-top: 40px;
@@ -133,6 +146,8 @@
   }
 }
 
+/* CHARACTERS, HEADINGS, PARAGRAFS */
+
 .faq__why,
 .faq__risky,
 .faq__to-do,
@@ -161,6 +176,8 @@
 .faq__travel__text {
   @include text-characters;
 }
+
+/* ASTRONAUT IMG */
 
 .astronaut-img {
   @include image-sizing;

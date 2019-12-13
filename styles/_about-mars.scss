@@ -26,6 +26,8 @@
     }
   }
 
+  /* WHY MARS */
+
   &__why-mars {
     @include article-wrap;
     min-height: 340px;
@@ -63,6 +65,8 @@
     margin-right: 48px;
   }
 
+  /* MOVE IN */
+
   &__move-in {
     @include article-wrap;
     min-height: 340px;
@@ -94,6 +98,8 @@
       text-align: left;
     }
   }
+
+  /* SUN */
 
   &__sun {
     @include article-wrap;
@@ -133,6 +139,8 @@
     }
   }
 
+  /* HEADINGS & PARAGRAFS */
+
   &__why-mars-heading,
   &__move-in-heading,
   &__sun-heading {
@@ -157,6 +165,8 @@
     line-height: 22px;
   }
 }
+
+/* IMAGES */
 
 .mars-img {
   @include image-sizing;
@@ -196,6 +206,8 @@
     }
   }
 }
+
+/* READ MORE BUTTONS */
 
 .read-more-btn {
   @include button;
