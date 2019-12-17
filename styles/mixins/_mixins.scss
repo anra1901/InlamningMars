@@ -89,3 +89,8 @@
   border-radius: 10px;
   border: solid 1px $blue-font;
 }
+
+@mixin square-size($size) {
+  height: $size;
+  width: $size;
+}

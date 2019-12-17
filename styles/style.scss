@@ -1,95 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
 @import "./mixins/mixins";
 @import "./variables/variables";
-@import "./hero1";
-@import "./mars-sky";
-@import "./about-mars";
-@import "./hero2";
-@import "./hero3";
-@import "./faq";
-@import "./solar-system";
-@import "./join-us";
-@import "./form";
-@import "./footer";
 
-* {
-  margin: 0;
-  padding: 0;
-}
+/* HOME PAGE */
+@import "./partials-home/hero1";
+@import "./partials-home/mars-sky";
+@import "./partials-home/about-mars";
 
-body {
-  font-family: "Montserrat", sans-serif;
-  background: #f1f1f1;
-}
+/* FAQ PAGE */
+@import "./partials-faq/hero2";
+@import "./partials-faq/faq";
+@import "./partials-faq/solar-system";
 
-main {
-  max-width: 100%;
-}
+/* JOIN US PAGE */
+@import "./partials-join/hero3";
+@import "./partials-join/join-us";
+@import "./partials-join/form";
 
-.menu-wraper {
-  @include menu-wraper;
-  flex-wrap: wrap;
-
-  &__logo-wrap {
-    @include image-sizing;
-    max-width: 72px;
-    max-height: 43px;
-    margin-right: 0;
-    margin-bottom: 15px;
-
-    @media (min-width: 500px) {
-      margin: 0 auto 0 42px;
-    }
-  }
-
-  &__link-list {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, max-content);
-    place-items: center;
-    transition: linear 300ms;
-
-    @media (min-width: 500px) {
-      padding-right: 20px;
-    }
-  }
-
-  &__links {
-    @include menu-link-style;
-    padding: 15px;
-    transition: linear 300ms;
-
-    @media (min-width: 500px) {
-      font-size: 16px;
-      padding: 30px;
-    }
-
-    &--active {
-      @include menu-link-style;
-      border-bottom: 3px solid $orange-font;
-      margin: 15px;
-      padding-bottom: 7px;
-      transition: linear 300ms;
-
-      @media (min-width: 500px) {
-        font-size: 16px;
-        margin: 30px;
-      }
-    }
-  }
-}
-
-h1 {
-  font-size: 37px;
-  font-weight: 800;
-  color: $white-font;
-  transition: linear 300ms;
-
-  @media (min-width: 700px) {
-    font-size: 60px;
-  }
-
-  @media (min-width: 500px) {
-    font-size: 50px;
-  }
-}
+/* GLOBAL LAYOUT */
+@import "./partials-layout/global";
+@import "./partials-layout/menu";
+@import "./partials-layout/footer";

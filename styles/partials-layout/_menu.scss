@@ -1,0 +1,52 @@
+.menu-wraper {
+  @include menu-wraper;
+  flex-wrap: wrap;
+
+  &__logo-wrap {
+    @include image-sizing;
+    max-width: 72px;
+    max-height: 43px;
+    margin-right: 0;
+    margin-bottom: 15px;
+
+    @media (min-width: 500px) {
+      margin: 0 auto 0 42px;
+    }
+  }
+
+  &__link-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    place-items: center;
+    transition: linear 300ms;
+
+    @media (min-width: 500px) {
+      padding-right: 20px;
+    }
+  }
+
+  &__links {
+    @include menu-link-style;
+    padding: 15px;
+    transition: linear 300ms;
+
+    @media (min-width: 500px) {
+      font-size: 16px;
+      padding: 30px;
+    }
+
+    &--active {
+      @include menu-link-style;
+      border-bottom: 3px solid $orange-font;
+      margin: 15px;
+      padding-bottom: 7px;
+      transition: linear 300ms;
+
+      @media (min-width: 500px) {
+        font-size: 16px;
+        margin: 30px;
+      }
+    }
+  }
+}

@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+/* SOLAR SYSTEM */
+/* HOME PAGE */
 .header {
   min-height: 500px;
   background-repeat: no-repeat;
@@ -575,111 +577,7 @@
   margin-top: 33px;
 }
 
-.header {
-  min-height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555593), to(#240202a2)), url(/images/hero1.jpg);
-  background-image: linear-gradient(to bottom, #c1555593, #240202a2), url(/images/hero1.jpg);
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  position: relative;
-  overflow: hidden;
-  transition: linear 300ms;
-}
-
-@media (min-width: 700px) {
-  .header {
-    min-height: 800px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .header {
-    min-height: 100vh;
-    min-width: 100%;
-  }
-}
-
-@media (min-width: 500px) {
-  .header {
-    place-items: unset;
-  }
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-  width: 200vw;
-  height: 200vw;
-  border-radius: 100%;
-  border: 20px solid #2c4f80;
-  -webkit-border-start: 5px;
-          border-inline-start: 5px;
-  -webkit-border-end: 5px;
-          border-inline-end: 5px;
-  background: linear-gradient(182deg, #00132c 61%, rgba(13, 37, 73, 0.9));
-  bottom: 15vw;
-  left: -40vw;
-}
-
-.header__wraper {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 15%;
-  z-index: 10;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
-}
-
-@media (min-width: 500px) {
-  .header__wraper {
-    margin-top: 1vh;
-    margin-left: 60vw;
-  }
-}
-
-.header__wraper__text {
-  font-size: 26px;
-  font-weight: bold;
-  color: #436dac;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
-}
-
-@media (min-width: 700px) {
-  .header__wraper__text {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 500px) {
-  .header__wraper__text {
-    font-size: 35px;
-  }
-}
-
-.blue-gradient {
-  background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9) -13%);
-  height: 100%;
-  width: 100%;
-  -webkit-clip-path: ellipse(62% 50% at 60% 17%);
-          clip-path: ellipse(62% 50% at 60% 17%);
-}
-
-.hero1-line, .hero2-line, .hero3-line {
-  display: block;
-  max-width: 360px;
-  min-height: 6px;
-  background-color: #ffffff;
-  margin: 5px;
-}
-
+/* FAQ PAGE */
 .header-faq {
   min-height: 500px;
   background-repeat: no-repeat;
@@ -771,102 +669,6 @@
 
 .hero2-line {
   max-width: 390px;
-}
-
-.header-join {
-  min-height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #24020294), to(#c15555d0)), url(/images/hero3.jpg);
-  background-image: linear-gradient(to bottom, #24020294 1%, #c15555d0), url(/images/hero3.jpg);
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  position: relative;
-  overflow: hidden;
-  transition: linear 300ms;
-}
-
-@media (min-width: 700px) {
-  .header-join {
-    min-height: 800px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .header-join {
-    min-height: 100vh;
-    min-width: 100%;
-  }
-}
-
-@media (min-width: 1100px) {
-  .header-join {
-    place-items: unset;
-  }
-}
-
-.header-join::after {
-  content: "";
-  position: absolute;
-  width: 200vw;
-  height: 200vw;
-  border-radius: 100%;
-  border: 20px solid #2c4f80;
-  -webkit-border-start: 5px;
-          border-inline-start: 5px;
-  -webkit-border-end: 5px;
-          border-inline-end: 5px;
-  background: linear-gradient(182deg, #00132c 61%, rgba(13, 37, 73, 0.9));
-  top: 15vw;
-  left: -75vw;
-}
-
-.header-join__wraper {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 15%;
-  z-index: 10;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
-}
-
-@media (min-width: 1100px) {
-  .header-join__wraper {
-    margin-left: 7vw;
-    margin-bottom: 13vh;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
-  }
-}
-
-.header-join__wraper__text {
-  font-size: 26px;
-  font-weight: bold;
-  color: #436dac;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
-}
-
-@media (min-width: 700px) {
-  .header-join__wraper__text {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 500px) {
-  .header-join__wraper__text {
-    font-size: 35px;
-  }
-}
-
-.hero3-line {
-  max-width: 350px;
 }
 
 .faq {
@@ -973,7 +775,7 @@
   padding-left: 20px;
 }
 
-.faq__risky__text-list li p {
+.faq__risky__text-list li span {
   color: #323232;
 }
 
@@ -1132,66 +934,235 @@
 
 .planets-wraper {
   background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
-  max-width: 462px;
-  min-height: 462px;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
+  text-align: center;
 }
 
-.planets-wraper__mars {
-  /* min-height: 100%;*/
-  height: 100%;
-  width: 100%;
-  max-height: 30px;
-  max-width: 30px;
-}
-
-.planets-wraper__mars img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
+@media (min-width: 500px) {
+  .planets-wraper {
+    max-width: 100vw;
+    min-width: 462px;
+    min-height: 462px;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    display: -ms-grid;
+    display: grid;
+    grid: 1fr/ 1fr;
+    place-items: center;
+  }
 }
 
 .planets-wraper__sun {
-  /* min-height: 100%;*/
-  height: 100%;
-  width: 100%;
-  max-height: 48px;
-  max-width: 48px;
+  padding: 10px;
 }
 
 .planets-wraper__sun img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  height: 48px;
+  width: 48px;
+}
+
+@media (min-width: 500px) {
+  .planets-wraper__sun {
+    padding: 0;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+.planets-wraper__mars {
+  padding: 10px;
+}
+
+.planets-wraper__mars img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (min-width: 500px) {
+  .planets-wraper__mars {
+    padding: 0;
+  }
+  .planets-wraper__mars img {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+  }
+  .planets-wraper__mars.orb {
+    height: 350px;
+    width: 350px;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+  }
 }
 
 .planets-wraper__earth {
-  /* min-height: 100%;*/
-  height: 100%;
-  width: 100%;
-  max-height: 30px;
-  max-width: 30px;
+  padding: 10px;
 }
 
 .planets-wraper__earth img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  height: 30px;
+  width: 30px;
+}
+
+@media (min-width: 500px) {
+  .planets-wraper__earth {
+    padding: 0;
+  }
+  .planets-wraper__earth img {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+  }
+  .planets-wraper__earth.orb {
+    height: 200px;
+    width: 200px;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+}
+
+@media (min-width: 500px) {
+  .orb {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    border: 1px dashed grey;
+    border-radius: 100%;
+    -webkit-animation: move-planet linear infinite;
+            animation: move-planet linear infinite;
+  }
+}
+
+@media (min-width: 500px) {
+  .ripple {
+    display: -ms-grid;
+    display: grid;
+    grid: 1fr / 1fr;
+    place-items: center;
+  }
+  .ripple-item:nth-child(2) {
+    -webkit-animation-delay: -400ms;
+            animation-delay: -400ms;
+  }
+  .ripple-item:nth-child(3) {
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms;
+  }
+}
+
+@-webkit-keyframes move-planet {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes move-planet {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* JOIN US PAGE */
+.header-join {
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #24020294), to(#c15555d0)), url(/images/hero3.jpg);
+  background-image: linear-gradient(to bottom, #24020294 1%, #c15555d0), url(/images/hero3.jpg);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: linear 300ms;
+}
+
+@media (min-width: 700px) {
+  .header-join {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header-join {
+    min-height: 100vh;
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header-join {
+    place-items: unset;
+  }
+}
+
+.header-join::after {
+  content: "";
+  position: absolute;
+  width: 200vw;
+  height: 200vw;
+  border-radius: 100%;
+  border: 20px solid #2c4f80;
+  -webkit-border-start: 5px;
+          border-inline-start: 5px;
+  -webkit-border-end: 5px;
+          border-inline-end: 5px;
+  background: linear-gradient(182deg, #00132c 61%, rgba(13, 37, 73, 0.9));
+  top: 15vw;
+  left: -75vw;
+}
+
+.header-join__wraper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 15%;
+  z-index: 10;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 1100px) {
+  .header-join__wraper {
+    margin-left: 7vw;
+    margin-bottom: 13vh;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+
+.header-join__wraper__text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #436dac;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 700px) {
+  .header-join__wraper__text {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 500px) {
+  .header-join__wraper__text {
+    font-size: 35px;
+  }
+}
+
+.hero3-line {
+  max-width: 350px;
 }
 
 .join-us {
@@ -1372,6 +1343,10 @@
   }
 }
 
+label {
+  display: block;
+}
+
 input, .dateofbirth, .motivation {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1423,61 +1398,7 @@ input, .dateofbirth, .motivation {
   }
 }
 
-.footer {
-  background: #2c4f80;
-  color: #ffffff;
-  min-height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (min-width: 900px) {
-  .footer {
-    min-height: 317px;
-  }
-}
-
-.footer h4 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 900px) {
-  .footer h4 {
-    font-size: 30px;
-    margin-bottom: 26px;
-  }
-}
-
-.footer__text {
-  font-size: 10px;
-  text-align: center;
-  margin: 0 10px;
-}
-
-@media (min-width: 900px) {
-  .footer__text {
-    font-size: 12px;
-  }
-}
-
-strong {
-  color: #f97c7c;
-  font-weight: bold;
-}
-
+/* GLOBAL LAYOUT */
 * {
   margin: 0;
   padding: 0;
@@ -1490,6 +1411,26 @@ body {
 
 main {
   max-width: 100%;
+}
+
+h1 {
+  font-size: 37px;
+  font-weight: 800;
+  color: #ffffff;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 50px;
+  }
 }
 
 .menu-wraper {
@@ -1606,23 +1547,58 @@ main {
   }
 }
 
-h1 {
-  font-size: 37px;
-  font-weight: 800;
+.footer {
+  background: #2c4f80;
   color: #ffffff;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (min-width: 700px) {
-  h1 {
-    font-size: 60px;
+@media (min-width: 900px) {
+  .footer {
+    min-height: 317px;
   }
 }
 
-@media (min-width: 500px) {
-  h1 {
-    font-size: 50px;
+.footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+  .footer h4 {
+    font-size: 30px;
+    margin-bottom: 26px;
   }
+}
+
+.footer__text {
+  font-size: 10px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+@media (min-width: 900px) {
+  .footer__text {
+    font-size: 12px;
+  }
+}
+
+strong {
+  color: #f97c7c;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
