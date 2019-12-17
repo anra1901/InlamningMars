@@ -15,6 +15,7 @@
 
   &__sun {
     padding: 10px;
+    animation: pulsate-fwd 1s ease-in-out infinite both;
     img {
       @include square-size($sun-size);
     }
@@ -50,6 +51,7 @@
     padding: 10px;
     img {
       @include square-size($planet-earth-size);
+      animation: rotate-center 15s linear infinite both;
     }
 
     @media (min-width: 500px) {
@@ -97,5 +99,26 @@
 @keyframes move-planet {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }

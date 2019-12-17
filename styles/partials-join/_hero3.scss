@@ -1,7 +1,7 @@
 .header-join {
   @include header-hero;
   background-image: linear-gradient(to bottom, #24020294 1%, #c15555d0),
-    url(/images/hero3.jpg);
+    url(../images/hero3.jpg);
   display: grid;
   place-items: center;
   position: relative;

@@ -8,8 +8,8 @@
   background-size: cover;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555593), to(#240202a2)), url(/images/hero1.jpg);
-  background-image: linear-gradient(to bottom, #c1555593, #240202a2), url(/images/hero1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555593), to(#240202a2)), url(../images/hero1.jpg);
+  background-image: linear-gradient(to bottom, #c1555593, #240202a2), url(../images/hero1.jpg);
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -63,7 +63,7 @@
   transition: linear 300ms;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 900px) {
   .header__wraper {
     margin-top: 1vh;
     margin-left: 60vw;
@@ -478,7 +478,19 @@
   line-height: 22px;
 }
 
-/* IMAGES */
+/* READ MORE BUTTONS */
+.read-more-btn {
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c4f80;
+  width: 128px;
+  height: 38px;
+  border-radius: 10px;
+  border: solid 1px #2c4f80;
+  margin-top: 33px;
+}
+
 .mars-img {
   /* min-height: 100%;*/
   height: 100%;
@@ -564,19 +576,6 @@
   }
 }
 
-/* READ MORE BUTTONS */
-.read-more-btn {
-  background: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
-  color: #2c4f80;
-  width: 128px;
-  height: 38px;
-  border-radius: 10px;
-  border: solid 1px #2c4f80;
-  margin-top: 33px;
-}
-
 /* FAQ PAGE */
 .header-faq {
   min-height: 500px;
@@ -585,8 +584,8 @@
   background-size: cover;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555593), to(#240202a2)), url(/images/hero2.jpg);
-  background-image: linear-gradient(to bottom, #c1555593, #240202a2), url(/images/hero2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555593), to(#240202a2)), url(../images/hero2.jpg);
+  background-image: linear-gradient(to bottom, #c1555593, #240202a2), url(../images/hero2.jpg);
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -640,7 +639,7 @@
   transition: linear 300ms;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 900px) {
   .header-faq__wraper {
     margin-top: 1vh;
     margin-left: 60vw;
@@ -669,6 +668,72 @@
 
 .hero2-line {
   max-width: 390px;
+}
+
+.faq__why,
+.faq__risky,
+.faq__to-do,
+.faq__travel {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(145, 145, 145, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(145, 145, 145, 0.5);
+}
+
+.faq__why__heading,
+.faq__risky__heading,
+.faq__to-do__heading,
+.faq__travel__heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e32700;
+  margin-bottom: 20px;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+@media (min-width: 1000px) {
+  .faq__why__heading,
+  .faq__risky__heading,
+  .faq__to-do__heading,
+  .faq__travel__heading {
+    font-size: 24px;
+  }
+}
+
+.faq__why__text,
+.faq__risky__text,
+.faq__to-do__text,
+.faq__travel__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #323232;
+}
+
+/* ASTRONAUT IMG */
+.astronaut-img {
+  /* min-height: 100%;*/
+  height: 100%;
+  width: 100%;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+}
+
+.astronaut-img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 1000px) {
+  .astronaut-img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: 1 / 2;
+  }
 }
 
 .faq {
@@ -865,73 +930,6 @@
   padding-bottom: 20px;
 }
 
-/* CHARACTERS, HEADINGS, PARAGRAFS */
-.faq__why,
-.faq__risky,
-.faq__to-do,
-.faq__travel {
-  background: #ffffff;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(145, 145, 145, 0.5);
-          box-shadow: 0 2px 4px 0 rgba(145, 145, 145, 0.5);
-}
-
-.faq__why__heading,
-.faq__risky__heading,
-.faq__to-do__heading,
-.faq__travel__heading {
-  font-size: 20px;
-  font-weight: 500;
-  color: #e32700;
-  margin-bottom: 20px;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
-}
-
-@media (min-width: 1000px) {
-  .faq__why__heading,
-  .faq__risky__heading,
-  .faq__to-do__heading,
-  .faq__travel__heading {
-    font-size: 24px;
-  }
-}
-
-.faq__why__text,
-.faq__risky__text,
-.faq__to-do__text,
-.faq__travel__text {
-  font-size: 16px;
-  font-weight: 500;
-  color: #323232;
-}
-
-/* ASTRONAUT IMG */
-.astronaut-img {
-  /* min-height: 100%;*/
-  height: 100%;
-  width: 100%;
-  -webkit-transition: linear 300ms;
-  transition: linear 300ms;
-}
-
-.astronaut-img img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-@media (min-width: 1000px) {
-  .astronaut-img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: 1 / 2;
-  }
-}
-
 .planets-wraper {
   background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
   text-align: center;
@@ -955,6 +953,8 @@
 
 .planets-wraper__sun {
   padding: 10px;
+  -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+          animation: pulsate-fwd 1s ease-in-out infinite both;
 }
 
 .planets-wraper__sun img {
@@ -1005,6 +1005,8 @@
 .planets-wraper__earth img {
   height: 30px;
   width: 30px;
+  -webkit-animation: rotate-center 15s linear infinite both;
+          animation: rotate-center 15s linear infinite both;
 }
 
 @media (min-width: 500px) {
@@ -1068,6 +1070,58 @@
   }
 }
 
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 /* JOIN US PAGE */
 .header-join {
   min-height: 500px;
@@ -1076,8 +1130,8 @@
   background-size: cover;
   -webkit-transition: linear 300ms;
   transition: linear 300ms;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #24020294), to(#c15555d0)), url(/images/hero3.jpg);
-  background-image: linear-gradient(to bottom, #24020294 1%, #c15555d0), url(/images/hero3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #24020294), to(#c15555d0)), url(../images/hero3.jpg);
+  background-image: linear-gradient(to bottom, #24020294 1%, #c15555d0), url(../images/hero3.jpg);
   display: -ms-grid;
   display: grid;
   place-items: center;

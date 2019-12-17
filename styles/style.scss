@@ -6,9 +6,11 @@
 @import "./partials-home/hero1";
 @import "./partials-home/mars-sky";
 @import "./partials-home/about-mars";
+@import "./partials-home/home-img";
 
 /* FAQ PAGE */
 @import "./partials-faq/hero2";
+@import "./partials-faq/faq-layout";
 @import "./partials-faq/faq";
 @import "./partials-faq/solar-system";
 
@@ -18,6 +20,6 @@
 @import "./partials-join/form";
 
 /* GLOBAL LAYOUT */
-@import "./partials-layout/global";
+@import "./partials-layout/base";
 @import "./partials-layout/menu";
 @import "./partials-layout/footer";

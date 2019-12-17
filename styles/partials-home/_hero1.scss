@@ -1,7 +1,7 @@
 .header {
   @include header-hero;
   background-image: linear-gradient(to bottom, #c1555593, #240202a2),
-    url(/images/hero1.jpg);
+    url(../images/hero1.jpg);
   display: grid;
   place-items: center;
   position: relative;
@@ -32,7 +32,7 @@
     z-index: 10;
     transition: linear 300ms;
 
-    @media (min-width: 500px) {
+    @media (min-width: 900px) {
       margin-top: 1vh;
       margin-left: 60vw;
     }

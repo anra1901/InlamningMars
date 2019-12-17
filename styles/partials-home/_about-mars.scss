@@ -166,47 +166,6 @@
   }
 }
 
-/* IMAGES */
-
-.mars-img {
-  @include image-sizing;
-  max-width: 158px;
-  max-height: 158px;
-  place-self: center center;
-  margin-top: 20px;
-  transition: linear 300ms;
-
-  @media (min-width: 500px) {
-    margin-top: 0;
-  }
-}
-
-.station-img {
-  @include image-sizing;
-  margin-bottom: 20px;
-  transition: linear 300ms;
-
-  @media (min-width: 1000px) {
-    margin-bottom: 0;
-  }
-}
-
-.sun-img {
-  @include image-sizing;
-  max-width: 232px;
-  max-height: 232px;
-  place-self: center;
-  margin-top: 20px;
-  img {
-    transition: linear 300ms;
-
-    @media (min-width: 1000px) {
-      margin-top: 49px;
-      margin-bottom: 49px;
-    }
-  }
-}
-
 /* READ MORE BUTTONS */
 
 .read-more-btn {
